@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            // eq함수로서도 사용가능
+            $('#menu li').eq(2)
+            .css({'background-color': '#ff0'});
+
+            $('#menu li:lt(2)') //lt = lessthan (2번보다 작은 새끼들 선택)
+            .css({'background-color': '#0ff'});
+
+            $('#menu li:gt(2)') // gt = greatthan (2번보다 큰 새끼들 선택)
+            .css({'background-color': '#f0f'});
+        });
+    </script>
+</head>
+<body>
+    <h1>탐색 선택자</h1>
+    <ul id="menu">
+        <li>내용 1</li>
+        <li>내용 2</li>
+        <li>내용 3</li>
+        <li>내용 4</li>
+        <li>내용 5</li>
+    </ul>
+    
+</body>
+</html>
